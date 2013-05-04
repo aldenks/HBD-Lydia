@@ -10,8 +10,6 @@
 
 #import "ModelController.h"
 
-#import "DataViewController.h"
-
 @interface RootViewController ()
 @property (readonly, strong, nonatomic) ModelController *modelController;
 @end
@@ -28,7 +26,7 @@
   self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
   self.pageViewController.delegate = self;
 
-  DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
+  UIViewController  *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
   NSArray *viewControllers = @[startingViewController];
   [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
 

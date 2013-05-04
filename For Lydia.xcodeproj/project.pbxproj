@@ -17,9 +17,10 @@
 		BF30E024172DFE8900E3F582 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF30E023172DFE8900E3F582 /* Default@2x.png */; };
 		BF30E026172DFE8900E3F582 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF30E025172DFE8900E3F582 /* Default-568h@2x.png */; };
 		BF30E029172DFE8900E3F582 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E028172DFE8900E3F582 /* RootViewController.m */; };
-		BF30E02C172DFE8900E3F582 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E02B172DFE8900E3F582 /* DataViewController.m */; };
 		BF30E02F172DFE8900E3F582 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E02E172DFE8900E3F582 /* ModelController.m */; };
 		BF30E032172DFE8900E3F582 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF30E030172DFE8900E3F582 /* MainStoryboard.storyboard */; };
+		BF30E03B172E13A500E3F582 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E03A172E13A500E3F582 /* FirstPageViewController.m */; };
+		BF30E03E1734470900E3F582 /* CardPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E03D1734470800E3F582 /* CardPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +39,13 @@
 		BF30E025172DFE8900E3F582 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF30E027172DFE8900E3F582 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		BF30E028172DFE8900E3F582 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		BF30E02A172DFE8900E3F582 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		BF30E02B172DFE8900E3F582 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		BF30E02D172DFE8900E3F582 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		BF30E02E172DFE8900E3F582 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		BF30E031172DFE8900E3F582 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BF30E039172E13A500E3F582 /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
+		BF30E03A172E13A500E3F582 /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
+		BF30E03C1734470800E3F582 /* CardPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPageViewController.h; sourceTree = "<group>"; };
+		BF30E03D1734470800E3F582 /* CardPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +96,10 @@
 				BF30E01F172DFE8900E3F582 /* AppDelegate.m */,
 				BF30E027172DFE8900E3F582 /* RootViewController.h */,
 				BF30E028172DFE8900E3F582 /* RootViewController.m */,
-				BF30E02A172DFE8900E3F582 /* DataViewController.h */,
-				BF30E02B172DFE8900E3F582 /* DataViewController.m */,
+				BF30E03C1734470800E3F582 /* CardPageViewController.h */,
+				BF30E03D1734470800E3F582 /* CardPageViewController.m */,
+				BF30E039172E13A500E3F582 /* FirstPageViewController.h */,
+				BF30E03A172E13A500E3F582 /* FirstPageViewController.m */,
 				BF30E02D172DFE8900E3F582 /* ModelController.h */,
 				BF30E02E172DFE8900E3F582 /* ModelController.m */,
 				BF30E030172DFE8900E3F582 /* MainStoryboard.storyboard */,
@@ -186,8 +191,9 @@
 				BF30E01C172DFE8900E3F582 /* main.m in Sources */,
 				BF30E020172DFE8900E3F582 /* AppDelegate.m in Sources */,
 				BF30E029172DFE8900E3F582 /* RootViewController.m in Sources */,
-				BF30E02C172DFE8900E3F582 /* DataViewController.m in Sources */,
 				BF30E02F172DFE8900E3F582 /* ModelController.m in Sources */,
+				BF30E03B172E13A500E3F582 /* FirstPageViewController.m in Sources */,
+				BF30E03E1734470900E3F582 /* CardPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +281,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "For Lydia/For Lydia-Prefix.pch";
 				INFOPLIST_FILE = "For Lydia/For Lydia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -286,6 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "For Lydia/For Lydia-Prefix.pch";
 				INFOPLIST_FILE = "For Lydia/For Lydia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,6 +318,7 @@
 				BF30E037172DFE8900E3F582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

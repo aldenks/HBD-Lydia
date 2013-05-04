@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class DataViewController;
+@class CardPageViewController;
 
 @interface ModelController : NSObject <UIPageViewControllerDataSource>
 
-- (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
-- (NSUInteger)indexOfViewController:(DataViewController *)viewController;
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+- (NSUInteger)indexOfViewController:(UIViewController *)viewController storyboard:(UIStoryboard *)storyboard;
 
 @end
