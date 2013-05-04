@@ -12,8 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  application.applicationSupportsShakeToEdit = YES;
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -41,6 +41,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - UIResponder
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+  if (motion == UIEventSubtypeMotionShake )
+  {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"shake" object:self];
+  }
 }
 
 @end

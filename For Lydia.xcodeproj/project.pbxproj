@@ -21,6 +21,10 @@
 		BF30E032172DFE8900E3F582 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF30E030172DFE8900E3F582 /* MainStoryboard.storyboard */; };
 		BF30E03B172E13A500E3F582 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E03A172E13A500E3F582 /* FirstPageViewController.m */; };
 		BF30E03E1734470900E3F582 /* CardPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30E03D1734470800E3F582 /* CardPageViewController.m */; };
+		BFABE0EA1734A6A600C8CEF6 /* party_blower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFABE0E91734A6A600C8CEF6 /* party_blower.mp3 */; };
+		BFABE0EC1734B3B000C8CEF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFABE0EB1734B3B000C8CEF6 /* AVFoundation.framework */; };
+		BFABE11B1734C47C00C8CEF6 /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFABE11A1734C47C00C8CEF6 /* AppIcon@2x.png */; };
+		BFABE11D1734C48C00C8CEF6 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFABE11C1734C48C00C8CEF6 /* AppIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		BF30E03A172E13A500E3F582 /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		BF30E03C1734470800E3F582 /* CardPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPageViewController.h; sourceTree = "<group>"; };
 		BF30E03D1734470800E3F582 /* CardPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPageViewController.m; sourceTree = "<group>"; };
+		BFABE0E91734A6A600C8CEF6 /* party_blower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = party_blower.mp3; sourceTree = "<group>"; };
+		BFABE0EB1734B3B000C8CEF6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BFABE11A1734C47C00C8CEF6 /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
+		BFABE11C1734C48C00C8CEF6 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../AppIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFABE0EC1734B3B000C8CEF6 /* AVFoundation.framework in Frameworks */,
 				BF30E010172DFE8900E3F582 /* UIKit.framework in Frameworks */,
 				BF30E012172DFE8900E3F582 /* Foundation.framework in Frameworks */,
 				BF30E014172DFE8900E3F582 /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +91,7 @@
 		BF30E00E172DFE8900E3F582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFABE0EB1734B3B000C8CEF6 /* AVFoundation.framework */,
 				BF30E00F172DFE8900E3F582 /* UIKit.framework */,
 				BF30E011172DFE8900E3F582 /* Foundation.framework */,
 				BF30E013172DFE8900E3F582 /* CoreGraphics.framework */,
@@ -104,6 +114,7 @@
 				BF30E02E172DFE8900E3F582 /* ModelController.m */,
 				BF30E030172DFE8900E3F582 /* MainStoryboard.storyboard */,
 				BF30E016172DFE8900E3F582 /* Supporting Files */,
+				BFABE0E71734A6A600C8CEF6 /* resource */,
 			);
 			path = "For Lydia";
 			sourceTree = "<group>";
@@ -118,8 +129,26 @@
 				BF30E021172DFE8900E3F582 /* Default.png */,
 				BF30E023172DFE8900E3F582 /* Default@2x.png */,
 				BF30E025172DFE8900E3F582 /* Default-568h@2x.png */,
+				BFABE11C1734C48C00C8CEF6 /* AppIcon.png */,
+				BFABE11A1734C47C00C8CEF6 /* AppIcon@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFABE0E71734A6A600C8CEF6 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				BFABE0E81734A6A600C8CEF6 /* sound */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		BFABE0E81734A6A600C8CEF6 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				BFABE0E91734A6A600C8CEF6 /* party_blower.mp3 */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +207,9 @@
 				BF30E024172DFE8900E3F582 /* Default@2x.png in Resources */,
 				BF30E026172DFE8900E3F582 /* Default-568h@2x.png in Resources */,
 				BF30E032172DFE8900E3F582 /* MainStoryboard.storyboard in Resources */,
+				BFABE0EA1734A6A600C8CEF6 /* party_blower.mp3 in Resources */,
+				BFABE11B1734C47C00C8CEF6 /* AppIcon@2x.png in Resources */,
+				BFABE11D1734C48C00C8CEF6 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

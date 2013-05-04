@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVAudioPlayer.h>
 
 @interface RootViewController : UIViewController <UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (nonatomic, readonly) AVAudioPlayer *partyBlowerPlayer;
+
+- (void)playPartyBlower:(NSNotification *)notification;
 
 @end

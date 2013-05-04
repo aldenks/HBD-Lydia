@@ -10,4 +10,7 @@
 
 @interface FirstPageViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *happyBirthdayLabel;
+- (void)tick;
+
 @end

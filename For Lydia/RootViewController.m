@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   // Configure the page view controller and add it as a child view controller.
   self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -43,6 +43,15 @@
 
   // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
   self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+
+  // sound players
+  NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"party_blower" withExtension:@"mp3"];
+  _partyBlowerPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:nil];
+  self.partyBlowerPlayer.volume = 1;
+  [self.partyBlowerPlayer prepareToPlay];
+
+  // motion events
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playPartyBlower:) name:@"shake" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,4 +90,12 @@
   return UIPageViewControllerSpineLocationMin;
 }
 
+#pragma mark - Audio
+
+- (void)playPartyBlower:(NSNotification *)notification
+{
+  [self.partyBlowerPlayer play];
+}
+
 @end
+
