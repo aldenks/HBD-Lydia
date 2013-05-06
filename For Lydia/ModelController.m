@@ -25,7 +25,7 @@
     _pages = [NSMutableArray array];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard"
                                                          bundle:[NSBundle mainBundle]];
-    NSArray *storyboard_idents = @[@"p0", @"p1", @"p2"];
+    NSArray *storyboard_idents = @[@"p0", @"p1", @"p2", @"p3", @"p4"];
     for (NSString *ident in storyboard_idents) {
       CardPageViewController *vc = [storyboard instantiateViewControllerWithIdentifier:ident];
       [self.pages addObject:vc];

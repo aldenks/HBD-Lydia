@@ -9,42 +9,58 @@
             <objects>
                 <viewController storyboardIdentifier="p1" id="5" customClass="CardPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9">
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Happy Birthday" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptx-Lg-2Vy">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="⇒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM2-gj-DyI">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="141" id="93u-bD-ZGN"/>
+                                            <constraint firstAttribute="height" constant="25" id="lLj-IF-cl9"/>
+                                            <constraint firstAttribute="width" constant="31" id="xOA-yv-VuK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Dear Lydia," minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slt-Fk-0HP">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dear Lydia," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-Qc-Av2">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="266" id="n85-7d-5Fp"/>
+                                            <constraint firstAttribute="height" constant="21" id="9Na-uC-Ifd"/>
+                                            <constraint firstAttribute="width" constant="100" id="G9w-2Z-zrI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Happy Birthday! You're growing up to be such a mature, talented young woman. I'm so proud to be your brother." lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="jsv-v2-0Hp">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="93" id="6pt-qG-czY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.94799702441637224" blue="0.79390638716938788" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ptx-Lg-2Vy" firstAttribute="leading" secondItem="slt-Fk-0HP" secondAttribute="leading" type="default" id="2q9-e0-85o"/>
-                                    <constraint firstItem="slt-Fk-0HP" firstAttribute="centerX" secondItem="9" secondAttribute="centerX" type="default" id="FiH-9P-3Rl"/>
-                                    <constraint firstItem="Ptx-Lg-2Vy" firstAttribute="centerY" secondItem="9" secondAttribute="centerY" type="default" id="cVn-oe-qe0"/>
-                                    <constraint firstItem="slt-Fk-0HP" firstAttribute="trailing" secondItem="Ptx-Lg-2Vy" secondAttribute="trailing" type="default" id="mGy-Be-TaJ"/>
-                                    <constraint firstItem="Ptx-Lg-2Vy" firstAttribute="top" secondItem="slt-Fk-0HP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mek-AK-JR9"/>
+                                    <constraint firstItem="jsv-v2-0Hp" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2dh-ay-fag"/>
+                                    <constraint firstItem="jJX-Qc-Av2" firstAttribute="top" secondItem="9" secondAttribute="top" constant="154" id="6UY-qp-zD4"/>
+                                    <constraint firstItem="RM2-gj-DyI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9" secondAttribute="top" priority="1" type="user" id="7Xo-Qb-MPU"/>
+                                    <constraint firstAttribute="bottom" secondItem="RM2-gj-DyI" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="HZA-v2-67A"/>
+                                    <constraint firstItem="jsv-v2-0Hp" firstAttribute="top" secondItem="jJX-Qc-Av2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jlh-n4-RIe"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsv-v2-0Hp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="K2T-Bo-AY0"/>
+                                    <constraint firstAttribute="trailing" secondItem="RM2-gj-DyI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Xku-fq-qeK"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RM2-gj-DyI" secondAttribute="bottom" constant="20" type="user" id="bNg-Ac-MgF"/>
+                                    <constraint firstItem="jJX-Qc-Av2" firstAttribute="leading" secondItem="9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="l6T-s4-Ilg"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="5" id="9lB-D3-Sao"/>
                             <constraint firstItem="9" firstAttribute="top" secondItem="6" secondAttribute="top" constant="-5" id="Yib-qE-bYQ"/>
                             <constraint firstItem="9" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" type="default" id="bN8-5E-QFq"/>
                             <constraint firstItem="9" firstAttribute="leading" secondItem="6" secondAttribute="leading" type="default" id="rJJ-pu-yUq"/>
-                            <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="5" id="xUD-5v-cPc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SKx-eV-VyL"/>
@@ -56,34 +72,38 @@
         <!--Card Page View Controller-->
         <scene sceneID="0JA-gO-6VE">
             <objects>
-                <viewController storyboardIdentifier="p2" id="avo-Oj-4Mf" customClass="CardPageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="p4" id="avo-Oj-4Mf" customClass="CardPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JRd-O0-lWh">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ps. Shake me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-cw-eZ0">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ps. Shake me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-cw-eZ0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6lN-aA-E8j"/>
+                                    <constraint firstAttribute="width" constant="115" id="dQI-lR-MoS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9479970244" blue="0.79390638719999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="OR3-cw-eZ0" secondAttribute="bottom" constant="162" id="eQO-bo-FaQ"/>
-                            <constraint firstItem="OR3-cw-eZ0" firstAttribute="centerX" secondItem="JRd-O0-lWh" secondAttribute="centerX" type="default" id="vyS-Ub-O8I"/>
+                            <constraint firstItem="OR3-cw-eZ0" firstAttribute="centerX" secondItem="JRd-O0-lWh" secondAttribute="centerX" type="default" id="Gmt-a0-EUt"/>
+                            <constraint firstAttribute="bottom" secondItem="OR3-cw-eZ0" secondAttribute="bottom" constant="165" id="edR-6f-Drn"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkf-yQ-kCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="1192"/>
+            <point key="canvasLocation" x="1874" y="1192"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="15">
             <objects>
                 <viewController id="12" customClass="RootViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="13">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -97,7 +117,7 @@
             <objects>
                 <viewController storyboardIdentifier="p0" id="09C-gD-phU" customClass="FirstPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWt-op-h44">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HAPPY BIRTHDAY!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Lzw-si-a6E">
@@ -108,7 +128,7 @@
                                 <color key="textColor" red="0.51642991634392366" green="0.32179686871519886" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="⇒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-A7-wYf">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="⇒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-A7-wYf">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="cYm-ur-Xny"/>
                                     <constraint firstAttribute="height" constant="25" id="jC0-Yb-1ct"/>
@@ -135,6 +155,143 @@
             </objects>
             <point key="canvasLocation" x="360" y="1192"/>
         </scene>
+        <!--Card Page View Controller-->
+        <scene sceneID="haJ-0t-YjL">
+            <objects>
+                <viewController storyboardIdentifier="p2" id="GqR-Rq-F6o" customClass="CardPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ML-ge-LYD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-VT-P7L">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="⇒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-dv-J2c">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="31" id="BRv-vk-p2r"/>
+                                            <constraint firstAttribute="height" constant="25" id="uEx-W2-03p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I Wish I could be there to celebrate with you, but since I can't here's something to commemorate your first smartphone." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-4w-yio">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="123" id="hrW-UY-dlw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remember: don't let your phone suck you in! The people around you are much more important :)" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="M6x-Is-Et0">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="123" id="4tX-1X-c1h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.9479970244" blue="0.79390638719999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vBV-dv-J2c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Asq-zJ-M78"/>
+                                    <constraint firstAttribute="trailing" secondItem="M6x-Is-Et0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EVb-AU-VBZ"/>
+                                    <constraint firstItem="EGc-4w-yio" firstAttribute="top" secondItem="yKU-VT-P7L" secondAttribute="top" constant="114" id="F3v-GJ-MtR"/>
+                                    <constraint firstAttribute="trailing" secondItem="EGc-4w-yio" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TYZ-9p-34B"/>
+                                    <constraint firstAttribute="bottom" secondItem="vBV-dv-J2c" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="edl-Lq-94K"/>
+                                    <constraint firstItem="M6x-Is-Et0" firstAttribute="top" secondItem="yKU-VT-P7L" secondAttribute="top" constant="263" id="fBc-od-kXl"/>
+                                    <constraint firstItem="M6x-Is-Et0" firstAttribute="leading" secondItem="yKU-VT-P7L" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oPI-2s-0vy"/>
+                                    <constraint firstItem="EGc-4w-yio" firstAttribute="leading" secondItem="yKU-VT-P7L" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="s5v-nD-D6l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yKU-VT-P7L" firstAttribute="leading" secondItem="2ML-ge-LYD" secondAttribute="leading" type="default" id="Edk-YA-eed"/>
+                            <constraint firstItem="yKU-VT-P7L" firstAttribute="bottom" secondItem="2ML-ge-LYD" secondAttribute="bottom" type="default" id="G1M-lh-WUD"/>
+                            <constraint firstItem="yKU-VT-P7L" firstAttribute="top" secondItem="2ML-ge-LYD" secondAttribute="top" type="default" id="QI2-D7-Hfz"/>
+                            <constraint firstItem="yKU-VT-P7L" firstAttribute="trailing" secondItem="2ML-ge-LYD" secondAttribute="trailing" type="default" id="jjk-q7-4QV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E2G-YP-swu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mh-S3-Wlw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="1192"/>
+        </scene>
+        <!--Card Page View Controller-->
+        <scene sceneID="wzL-hu-HpY">
+            <objects>
+                <viewController storyboardIdentifier="p3" id="8Hn-mo-hRH" customClass="CardPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DTr-Rg-hbt">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygq-ix-Gb5">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="⇒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXs-MQ-lb5">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="fry-uT-HGX"/>
+                                            <constraint firstAttribute="width" constant="31" id="nzd-cw-f9v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Can't wait to come hang out in Seattle with you after graduation." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="208" translatesAutoresizingMaskIntoConstraints="NO" id="HDw-4O-qFt">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="oMm-BZ-ExM"/>
+                                            <constraint firstAttribute="width" constant="208" id="viJ-GX-d1e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Love," lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="62" translatesAutoresizingMaskIntoConstraints="NO" id="ga5-pO-TE5">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="B23-Jg-tLe"/>
+                                            <constraint firstAttribute="width" constant="62" id="Fr3-We-0ku"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Alden" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="83" translatesAutoresizingMaskIntoConstraints="NO" id="dq8-FN-yof">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="2u8-pJ-ox9"/>
+                                            <constraint firstAttribute="width" constant="83" id="SKr-IT-CK5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.9479970244" blue="0.79390638719999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cXs-MQ-lb5" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1I4-K0-I4a"/>
+                                    <constraint firstItem="ga5-pO-TE5" firstAttribute="top" secondItem="Ygq-ix-Gb5" secondAttribute="top" constant="262" id="LVo-9E-eVC"/>
+                                    <constraint firstItem="HDw-4O-qFt" firstAttribute="leading" secondItem="Ygq-ix-Gb5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Mhn-oW-pek"/>
+                                    <constraint firstAttribute="bottom" secondItem="cXs-MQ-lb5" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Q2c-OQ-H2B"/>
+                                    <constraint firstItem="dq8-FN-yof" firstAttribute="leading" secondItem="Ygq-ix-Gb5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SeO-sz-g5E"/>
+                                    <constraint firstItem="HDw-4O-qFt" firstAttribute="top" secondItem="Ygq-ix-Gb5" secondAttribute="top" constant="170" id="btq-YA-VrO"/>
+                                    <constraint firstItem="dq8-FN-yof" firstAttribute="top" secondItem="ga5-pO-TE5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="khN-ak-nTc"/>
+                                    <constraint firstItem="ga5-pO-TE5" firstAttribute="leading" secondItem="Ygq-ix-Gb5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sJO-k1-C50"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ygq-ix-Gb5" firstAttribute="leading" secondItem="DTr-Rg-hbt" secondAttribute="leading" type="default" id="UVL-ij-NnZ"/>
+                            <constraint firstItem="Ygq-ix-Gb5" firstAttribute="bottom" secondItem="DTr-Rg-hbt" secondAttribute="bottom" type="default" id="eS4-Hb-bOb"/>
+                            <constraint firstItem="Ygq-ix-Gb5" firstAttribute="trailing" secondItem="DTr-Rg-hbt" secondAttribute="trailing" type="default" id="hOV-4k-RfG"/>
+                            <constraint firstItem="Ygq-ix-Gb5" firstAttribute="top" secondItem="DTr-Rg-hbt" secondAttribute="top" type="default" id="jL8-Am-jl9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nqX-cE-VGT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvt-Ei-ADt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="1192"/>
+        </scene>
     </scenes>
     <classes>
         <class className="CardPageViewController" superclassName="UIViewController">
@@ -156,6 +313,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
