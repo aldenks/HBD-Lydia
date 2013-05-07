@@ -174,7 +174,7 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I Wish I could be there to celebrate with you, but since I can't here's something to commemorate your first smartphone." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-4w-yio">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I wish I could be there to celebrate with you, but since I can't here's something to commemorate your first smartphone." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-4w-yio">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="123" id="hrW-UY-dlw"/>
                                         </constraints>
@@ -196,7 +196,6 @@
                                     <constraint firstAttribute="trailing" secondItem="vBV-dv-J2c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Asq-zJ-M78"/>
                                     <constraint firstAttribute="trailing" secondItem="M6x-Is-Et0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EVb-AU-VBZ"/>
                                     <constraint firstItem="EGc-4w-yio" firstAttribute="top" secondItem="yKU-VT-P7L" secondAttribute="top" constant="114" id="F3v-GJ-MtR"/>
-                                    <constraint firstAttribute="trailing" secondItem="EGc-4w-yio" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TYZ-9p-34B"/>
                                     <constraint firstAttribute="bottom" secondItem="vBV-dv-J2c" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="edl-Lq-94K"/>
                                     <constraint firstItem="M6x-Is-Et0" firstAttribute="top" secondItem="yKU-VT-P7L" secondAttribute="top" constant="263" id="fBc-od-kXl"/>
                                     <constraint firstItem="M6x-Is-Et0" firstAttribute="leading" secondItem="yKU-VT-P7L" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oPI-2s-0vy"/>

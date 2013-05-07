@@ -45,14 +45,13 @@
 {
   CGFloat hue, sat, bright, alpha, _;
   [self.view.backgroundColor getHue:&hue saturation:&sat brightness:&bright alpha:&alpha];
-  //hue += 0.2;
-  hue += 0.02;
+  hue += 0.01;
   UIColor *shiftedColor = [UIColor colorWithHue:modff(hue, &_) saturation:sat brightness:bright alpha:alpha];
   self.view.backgroundColor = shiftedColor;
   hue += 0.5;
   UIColor *shiftedTextColor = [UIColor colorWithHue:modff(hue, &_) saturation:sat brightness:bright alpha:alpha];
   self.happyBirthdayLabel.textColor = shiftedTextColor;
-  [self performSelector:@selector(tick) withObject:nil afterDelay:0.04];
+  [self performSelector:@selector(tick) withObject:nil afterDelay:0.02];
 }
 
 - (void)didReceiveMemoryWarning
